@@ -15,14 +15,16 @@
 from flask import Flask, render_template_string
 
 import folium
+import pandas as pd
 
 app = Flask(__name__)
-
+db = pd.read_csv('churches.csv')
 
 @app.route("/")
 def fullscreen():
     """Simple example of a fullscreen map."""
     m = folium.Map(location=(50.0348411, 15.7775986))
+    print(db)
     return m.get_root().render()
 
 
@@ -57,7 +59,7 @@ def components():
     m = folium.Map(
         width=800,
         height=600,
-        m = folium.Map(location=(50.0348411, 15.7775986))
+        location=(50.0348411, 15.7775986)
     )
 
     m.get_root().render()
