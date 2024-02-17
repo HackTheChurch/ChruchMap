@@ -1,5 +1,9 @@
 # Mass maps
 
+## Contents
+- ChurchMap/ChurchMap - demo app using C# ASP.NET
+- flask_demo - demo app useing python flask + folium
+
 ## Problem:
 -	People don’t know when the masses are.
 -	There is a website for Prague diocese, but the map is not responsible for mobile phones.
