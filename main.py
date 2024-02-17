@@ -12,7 +12,7 @@
     Example taken from: https://python-visualization.github.io/folium/latest/advanced_guide/flask.html
 """
 
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, render_template
 
 import folium
 import pandas as pd
@@ -20,15 +20,16 @@ import pandas as pd
 app = Flask(__name__)
 db = pd.read_csv('churches.csv')
 
+# @app.route("/")
+# def fullscreen():
+#     """Simple example of a fullscreen map."""
+#     m = folium.Map(location=(50.0348411, 15.7775986))
+#     print(db)
+#     return m.get_root().render()
+
+
+#@app.route("/iframe")
 @app.route("/")
-def fullscreen():
-    """Simple example of a fullscreen map."""
-    m = folium.Map(location=(50.0348411, 15.7775986))
-    print(db)
-    return m.get_root().render()
-
-
-@app.route("/iframe")
 def iframe():
     """Embed a map as an iframe on a page."""
     m = folium.Map(location=(50.0348411, 15.7775986))
@@ -38,17 +39,8 @@ def iframe():
     m.get_root().height = "600px"
     iframe = m.get_root()._repr_html_()
 
-    return render_template_string(
-        """
-            <!DOCTYPE html>
-            <html>
-                <head></head>
-                <body>
-                    <h1>Using an iframe</h1>
-                    {{ iframe|safe }}
-                </body>
-            </html>
-        """,
+    return render_template(
+        'index.html',
         iframe=iframe,
     )
 
