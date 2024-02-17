@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "_MapLayout";
+}
+
+@model Search;
+
+
+<div class="container mt-5">
+    <div>
+        <form method="post" asp-action="MapFind">
+        <div class="input-group mb-3">
+            <input asp-for="@Model.Value" type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="submit" id="button-addon2">Find</button>
+
+            
+        </div>
+    </form>
+    </div>
+    @if(Model.Value != null)
+    {
+    <div>
+        <div>
+            <p>Time start: <span>@ViewBag.Time</span> &emsp; Priest: <span>@ViewBag.Priest</span> &emsp; Color: <span>@ViewBag.Color</span> &emsp;  Nearest station: <span>@ViewBag.Station</span></p>
+        </div>
+        
+    </div>
+    }
+    
+
+   
+</div>
+
+<div>
+     <div>
+        <iframe style="border: none; position: fixed; top: 150px; left: 0px; right: 200px; width: 100%; height: 100vh;" src="@ViewBag.Search" frameborder="0"></iframe>
+    </div>
+    
+</div>
+
+
+
+
+
