@@ -4,9 +4,15 @@
 
 ***Next mass is just a click away.***
 
+## Team
+- [Eliška](https://www.linkedin.com/in/eli%C5%A1ka-lutzov%C3%A1-9a3069251/)
+- [Oliver](https://www.linkedin.com/in/oliver-hruban-002394227/)
+- [Carlos](https://www.linkedin.com/in/carlosthe19916/)
+- [Vojta](https://www.linkedin.com/in/vojtech-vlach/)
+
 ## Contents
 - ChurchMap/ChurchMap - demo app using C# ASP.NET
-- flask_demo - demo app useing python flask + folium
+- flask_demo - demo app using python flask + folium
 
 ## Problem
 - People don’t know when the masses are.
@@ -41,12 +47,35 @@
   - Mockups - el Carlos
 - Code – el Oliveros + el Vojtos
 
+### ASP.NET demo
+
+![ASP demo screenshot](assets/ASP_demo.png)
+
+### Flask demo
+
+![Flask demo screensho](assets/Flask_demo.png)
+
+### Mobile app mockups
+
+![Mobile app mockups](assets/Mobile_mockups.png)
+
+### SWOT analysis
+
+![SWOT analysis screenshot](assets/SWOT.png)
+
 
 # ChurchMap CZ
 [CZ](#ChurchMap-CZ)
 [EN](#ChurchMap-EN)
 
 ***Přístí mše je na dosah kliku.***
+
+## Tým
+- [Eliška](https://www.linkedin.com/in/eli%C5%A1ka-lutzov%C3%A1-9a3069251/)
+- [Oliver](https://www.linkedin.com/in/oliver-hruban-002394227/)
+- [Carlos](https://www.linkedin.com/in/carlosthe19916/)
+- [Vojta](https://www.linkedin.com/in/vojtech-vlach/)
+
 
 ## Obsah repozitáře
 - ChurchMap/ChurchMap - demo aplikace v C# ASP.NET
@@ -83,3 +112,20 @@
   - Swot analýza  - el Carlos
   - Mockupy - el Carlos
 - Kód – el Oliveros + el Vojtos
+
+### ASP.NET demo
+
+![ASP demo screenshot](assets/ASP_demo.png)
+
+### Flask demo
+
+![Flask demo screensho](assets/Flask_demo.png)
+
+### Mobile app mockups
+
+![Mobile app mockups](assets/Mobile_mockups.png)
+
+### SWOT analysis
+
+![SWOT analysis screenshot](assets/SWOT.png)
+
